@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="13" id="com.coactiveapps.dev.paul" ios-CFBundleVersion="0.1.3" version="0.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Coactive</name>
+<widget android-versionCode="13" id="com.coactiveapps.dev.iupengage" ios-CFBundleVersion="0.1.3" version="0.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>IUPUI Engage</name>
     <description>
-        Paul's Dev Coactive App Space.
+        IUPUI Engage
     </description>
     <author email="info@coactiveapps.com" href="https://coactiveapps.com">
         Coactive Team
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="https://paul.dev.coactiveapps.com/*" />
+    <allow-navigation href="https://iupengage.dev.coactiveapps.com/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -52,10 +52,18 @@
         <splash height="2208" src="res/screen/ios/Default-Portrait-736h@3x.png" width="1242" />
         <splash height="1242" src="res/screen/ios/Default-Landscape-736h@3x.png" width="2208" />
     </platform>
-    <engine name="android" spec="^6.2.3" />
-    <engine name="ios" spec="^4.5.1" />
+    <engine name="android" spec="^6.3.0" />
+    <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-plugin-dialogs" spec="^1.3.3" />
     <plugin name="cordova-plugin-network-information" spec="^1.3.3" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+    <plugin name="cordova-plugin-camera" spec="^2.4.1">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value=" " />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
+    </plugin>
+    <plugin name="cordova-plugin-geolocation" spec="^3.0.0" />
+    <plugin name="cordova-plugin-media" spec="^4.0.0" />
+    <plugin name="cordova-plugin-media-capture" spec="^2.0.0" />
+    <plugin name="cordova-plugin-shake" spec="^0.6.0" />
 </widget>
