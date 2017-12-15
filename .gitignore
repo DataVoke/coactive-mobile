@@ -13,5 +13,5 @@ node_modules/
 .idea/
 
 # Cordova
-platforms
-plugins
+platforms/
+plugins/
