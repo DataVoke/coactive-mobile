@@ -28,17 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-        // Reload on shake 3X
-        let shakeCount = 0;
-        shake.startWatch(() => {
-            console.log('STOP shaking me!');
-            shakeCount++;
-            if (shakeCount === 3) {
-                shakeCount = 0;
-                window.location.reload(true);
-            }
-        }, 40);
-        window.location = 'https://iupengage.dev.coactiveapps.com';
+        window.location = 'https://paul.dev.coactiveapps.com';
     },
 
     // Update DOM on a Received Event
